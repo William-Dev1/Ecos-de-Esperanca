@@ -19,16 +19,16 @@ const links  = document.querySelector('.nav_links');
 if (toggle && links) {
   toggle.addEventListener('click', () => {
     // Alterna a animação do botão sanduíche
-    toggle.classList.toggle('nav_toggle--active');
+    toggle.classList.toggle('nav_toggle-active');
     // Abre e fecha o menu drop-down no mobile
-    links.classList.toggle('nav_links--active');
+    links.classList.toggle('nav_links-active');
   });
 
   // Fecha o menu automaticamente ao clicar em qualquer link
   links.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
-      toggle.classList.remove('nav_toggle--active');
-      links.classList.remove('nav_links--active');
+      toggle.classList.remove('nav_toggle-active');
+      links.classList.remove('nav_links-active');
     });
   });
 }
